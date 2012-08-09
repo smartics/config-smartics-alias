@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.smartics.config.pom</groupId>
+    <artifactId>pom-root</artifactId>
+    <version>29.3.1-SNAPSHOT</version>
+  </parent>
+
+  <groupId>de.smartics.config</groupId>
+  <artifactId>config-smartics-alias</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>config-smartics-alias</name>
+  <description>
+    Provides a configuration to create alias scripts.
+  </description>
+  <url>${weburl}</url>
+  <inceptionYear>2012</inceptionYear>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+      <comments>
+        Copyright 2012 smartics, Kronseder &amp; Reiner GmbH
+      </comments>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</connection>
+    <developerConnection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</developerConnection>
+    <url>https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</url>
+  </scm>
+
+  <distributionManagement>
+    <site>
+      <id>${project-visibility}-site</id>
+      <name>documentation site</name>
+      <url>${site.url}</url>
+    </site>
+  </distributionManagement>
+
+  <properties>
+    <issues-component>Core</issues-component>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>de.smartics.maven.plugin</groupId>
+        <artifactId>alias-maven-plugin</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <executions>
+          <execution>
+            <id>alias</id>
+            <goals>
+              <goal>alias</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
