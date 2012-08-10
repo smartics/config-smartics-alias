@@ -58,6 +58,10 @@
       <resource>
         <directory>src/main/resources</directory>
       </resource>
+      <resource>
+        <directory>target/alias-scripts</directory>
+        <targetPath>alias-scripts</targetPath>
+      </resource>
     </resources>
 
     <plugins>
@@ -72,10 +76,41 @@
               <goal>alias</goal>
             </goals>
             <configuration>
-              <docUrl>${project.url}</docUrl>
+              <docUrl>${project.url}/alias-report.html</docUrl>
             </configuration>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <configuration>
+          <reportPlugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-project-info-reports-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <groupId>de.smartics.maven.plugin</groupId>
+              <artifactId>maven-issues-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <groupId>de.smartics.maven.plugin</groupId>
+              <artifactId>maven-issues-plugin</artifactId>
+            </plugin>
+            <plugin>
+              <groupId>de.smartics.maven.plugin</groupId>
+              <artifactId>maven-buildmetadata-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+              <groupId>de.smartics.maven.plugin</groupId>
+              <artifactId>alias-maven-plugin</artifactId>
+              <version>0.1.0-SNAPSHOT</version>
+            </plugin>
+          </reportPlugins>
+        </configuration>
       </plugin>
     </plugins>
   </build>
