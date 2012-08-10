@@ -20,56 +20,95 @@
   xmlns="http://smartics.de/alias/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <group name="mvn">
+    <comment>
+      Aliases running builds with <a href="http://maven.apache.org">Maven</a>.
+    </comment>
     <alias>
       <name>i</name>
       <command>mvn -T 4 clean install</command>
-      <comment>Installs a project with Maven. Requires a valid Maven-POM.</comment>
+      <comment>Installs a project with <a href="http://maven.apache.org">Maven</a>. Requires a valid Maven-POM.</comment>
     </alias>
     <alias>
       <name>s</name>
       <command>mvn -T 4 initialize site</command>
-      <comment>Creates Maven site. Requires a valid Maven-POM.</comment>
+      <comment>Creates <a href="http://maven.apache.org">Maven</a> site. Requires a valid Maven-POM.</comment>
     </alias>
     <alias>
       <name>l</name>
       <command>mvn initialize license:format</command>
-      <comment>Formats licensen headers. Requires a valid Maven-POM.</comment>
+      <comment>
+        Formats licensen headers in a <a href="http://maven.apache.org">Maven</a> project.
+        Requires a valid Maven-POM and a configured
+        <a href="http://code.google.com/p/maven-license-plugin/">maven-license-plugin</a>.
+      </comment>
     </alias>
   </group>
 
-  <group name="integration">
+  <group name="project-sync">
+    <comment>
+      Aliases synchronizing project information with external information systems.
+    </comment>
     <alias>
       <name>b</name>
       <command>mvn bugzilla:sync</command>
-      <comment>Syncs Bugzilla product with Maven-POM.</comment>
+      <comment>
+        Syncs Bugzilla product with Maven-POM.
+
+        <p>
+          For more information please refer to the
+          <a href="http://www.smartics.eu/bugzilla-maven-plugin/">bugzilla plugin's homepage</a>.
+        </p>
+      </comment>
     </alias>
     <alias>
       <name>bi</name>
       <command>mvn bugzilla:init</command>
-      <comment>Creates product in Bugzilla based on Maven-POM.</comment>
+      <comment>
+        Creates product in Bugzilla based on Maven-POM.
+        <p>
+          For more information please refer to the
+          <a href="http://www.smartics.eu/bugzilla-maven-plugin/">bugzilla plugin's homepage</a>.
+        </p>
+      </comment>
     </alias>
     <alias>
       <name>chj</name>
       <command>mvn hudson:createJobs</command>
-      <comment>Creates Hudson job based on Maven-POM.</comment>
+      <comment>
+        Creates Hudson job based on Maven-POM.
+        <p>
+          For more information please refer to the
+          <a href="http://www.smartics.eu/hudson-maven-plugin/">hudson plugin's homepage</a>.
+        </p>
+      </comment>
     </alias>
     <alias>
       <name>dhj</name>
       <command>mvn hudson:deleteJobs</command>
-      <comment>Deletes Hudson job based on Maven-POM.</comment>
+      <comment>
+        Deletes Hudson job based on Maven-POM.
+
+        <p>
+          For more information please refer to the
+          <a href="http://www.smartics.eu/hudson-maven-plugin/">hudson plugin's homepage</a>.
+        </p>
+      </comment>
     </alias>
   </group>
 
   <group name="java">
+    <comment>
+      Aliases setting enironment variables for the Java runtime.
+    </comment>
     <alias env="windows">
       <name>j6</name>
       <command passArgs="false">set JAVA_HOME=%JAVA_HOME_6%</command>
-      <comment>Sets environment variable JAVA_HOME to existing JAVA_HOME_6.</comment>
+      <comment>Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_6</tt>.</comment>
     </alias>
     <alias env="windows">
       <name>j7</name>
       <command passArgs="false">set JAVA_HOME=%JAVA_HOME_7%</command>
-      <comment>Sets environment variable JAVA_HOME to existing JAVA_HOME_7.</comment>
+      <comment>Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_7</tt>.</comment>
     </alias>
   </group>
 </aliases>
