@@ -59,8 +59,8 @@
         <directory>src/main/resources</directory>
       </resource>
       <resource>
-        <directory>target/alias-scripts</directory>
         <targetPath>alias-scripts</targetPath>
+        <directory>target/alias-scripts</directory>
       </resource>
     </resources>
 
@@ -68,7 +68,7 @@
       <plugin>
         <groupId>de.smartics.maven.plugin</groupId>
         <artifactId>alias-maven-plugin</artifactId>
-        <version>0.1.1-SNAPSHOT</version>
+        <version>0.1.0</version>
         <executions>
           <execution>
             <id>alias</id>
