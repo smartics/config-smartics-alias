@@ -9,7 +9,7 @@
   <parent>
     <groupId>de.smartics.config.pom</groupId>
     <artifactId>pom-root</artifactId>
-    <version>29.3.1-SNAPSHOT</version>
+    <version>29.3.1</version>
   </parent>
 
   <groupId>de.smartics.config</groupId>
@@ -107,7 +107,7 @@
             <plugin>
               <groupId>de.smartics.maven.plugin</groupId>
               <artifactId>alias-maven-plugin</artifactId>
-              <version>0.1.0-SNAPSHOT</version>
+              <version>0.1.1</version>
             </plugin>
           </reportPlugins>
         </configuration>
