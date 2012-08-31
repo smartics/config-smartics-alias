@@ -34,10 +34,15 @@
       <comment>Creates <a href="http://maven.apache.org">Maven</a> site. Requires a valid Maven-POM.</comment>
     </alias>
     <alias>
+      <name>sd</name>
+      <command>mvn -T 4 clean deploy site-deploy</command>
+      <comment>Creates and deploys a project and its <a href="http://maven.apache.org">Maven</a> site. Requires a valid Maven-POM.</comment>
+    </alias>
+    <alias>
       <name>l</name>
       <command>mvn initialize license:format</command>
       <comment>
-        Formats licensen headers in a <a href="http://maven.apache.org">Maven</a> project.
+        Formats license headers in a <a href="http://maven.apache.org">Maven</a> project.
         Requires a valid Maven-POM and a configured
         <a href="http://code.google.com/p/maven-license-plugin/">maven-license-plugin</a>.
       </comment>
@@ -96,9 +101,52 @@
     </alias>
   </group>
 
+  <group name="project-analysis">
+    <comment>
+      Aliases to analyze project information.
+    </comment>
+    <alias>
+      <name>a</name>
+      <command>mvn dependency:analyze</command>
+      <comment>
+        Analyzes the dependencies of this project and determines which are: used and declared;
+        used and undeclared; unused and declared. This goal is intended to be used standalone,
+        thus it always executes the test-compile phase - use the dependency:analyze-only goal
+        instead when participating in the build lifecycle.
+
+        <p>
+          For more information please refer to the
+          <a href="http://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html">analyze mojo</a>.
+        </p>
+      </comment>
+    </alias>
+    <alias>
+      <name>pu</name>
+      <command>mvn versions:display-plugin-updates</command>
+      <comment>
+        Displays all plugins that have newer versions available.
+        <p>
+          For more information please refer to the
+          <a href="http://mojo.codehaus.org/versions-maven-plugin/display-plugin-updates-mojo.html">display-plugin-updates mojo</a>.
+        </p>
+      </comment>
+    </alias>
+    <alias>
+      <name>du</name>
+      <command>mvn versions:display-dependency-updates</command>
+      <comment>
+        Displays all dependencies that have newer versions available.
+        <p>
+          For more information please refer to the
+          <a href="http://mojo.codehaus.org/versions-maven-plugin/display-dependency-updates-mojo.html">display-dependency-updates mojo</a>.
+        </p>
+      </comment>
+    </alias>
+  </group>
+
   <group name="java">
     <comment>
-      Aliases setting enironment variables for the Java runtime.
+      Aliases setting environment variables for the Java runtime.
     </comment>
     <alias env="windows">
       <name>j6</name>
