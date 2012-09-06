@@ -144,6 +144,67 @@
     </alias>
   </group>
 
+  <group name="project-release">
+    <comment>
+      Aliases to release a project with <a href="http://maven.apache.org">Maven</a>.
+    </comment>
+    <alias>
+      <name>r</name>
+      <command>mvn -T 4 release:prepare release:perform</command>
+      <comment>
+        Prepares and performs the release of a project.
+      </comment>
+    </alias>
+    <alias>
+      <name>rpr</name>
+      <command>mvn -T 4 release:prepare</command>
+      <comment>
+        Prepares the release of a project.
+
+        <p>
+          For more information please refer to the
+          <a href="http://maven.apache.org/plugins/maven-release-plugin/prepare-mojo.html">prepare mojo</a>.
+        </p>
+      </comment>
+    </alias>
+    <alias>
+      <name>rpe</name>
+      <command>mvn -T 4 release:perform</command>
+      <comment>
+        Performs the release of a project after it has been prepared.
+
+        <p>
+          For more information please refer to the
+          <a href="http://maven.apache.org/plugins/maven-release-plugin/perform-mojo.html">perform mojo</a>.
+        </p>
+      </comment>
+    </alias>
+    <alias>
+      <name>rr</name>
+      <command>mvn release:rollback</command>
+      <comment>
+        Runs a rollback after a failed release. Please note that any SCM tags have to be removed manually.
+
+        <p>
+          For more information please refer to the
+          <a href="http://maven.apache.org/plugins/maven-release-plugin/rollback-mojo.html">rollback mojo</a>.
+        </p>
+      </comment>
+    </alias>
+    <alias>
+      <name>rc</name>
+      <command>mvn release:clean</command>
+      <comment>
+        Runs a clean after a failed release.
+
+        <p>
+          For more information please refer to the
+          <a href="http://maven.apache.org/plugins/maven-release-plugin/clean-mojo.html">clean mojo</a>.
+        </p>
+      </comment>
+    </alias>
+  </group>
+
   <group name="java">
     <comment>
       Aliases setting environment variables for the Java runtime.
