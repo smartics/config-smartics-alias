@@ -38,7 +38,8 @@
     </breadcrumbs>
 
     <menu name="Overview">
-      <item name="Home" href="index.html"/>
+      <item name="Home"    href="index.html"/>
+      <item name="Aliases" href="aliases.html"/>
     </menu>
 
     <menu name="Project Documentation">
