@@ -32,6 +32,10 @@
         <a href="http://www.smartics.eu/nexus/index.html#nexus-search;quick~config-smartics-alias">smartics Nexus</a>
         or checkout the project from <a href="source-repository.html">SVN</a>.
       </p>
+      <p>
+        You may also have a look at it at the <a href="aliases.html">Aliases Configuration</a>
+        on this website.
+      </p>
     </section>
   </body>
 </document>
