@@ -42,6 +42,13 @@
       <item name="Aliases" href="aliases.html"/>
     </menu>
 
+    <menu name="Release Information">
+      <item name="New and Noteworthy" href="new-and-noteworthy.html"/>
+      <item name="Release Notes"      href="release-notes-report.html"/>
+      <item name="Breaking News"      href="breaking-news.html"/>
+      <item name="Release Plan"       href="release-plan-report.html"/>
+    </menu>
+
     <menu name="Project Documentation">
       <item name="Project Information" href="project-info.html" collapse="true">
         <item name="Summary" href="project-summary.html"/>
