@@ -47,7 +47,6 @@
   </distributionManagement>
 
   <properties>
-    <issues-component>Core</issues-component>
   </properties>
 
   <build>
