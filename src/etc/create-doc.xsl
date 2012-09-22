@@ -19,7 +19,7 @@
 
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:a="http://smartics.de/alias/1.0.0"
+  xmlns:a="http://smartics.de/alias/1.1.0"
   version="1.0">
     <xsl:output
        method="xml"
