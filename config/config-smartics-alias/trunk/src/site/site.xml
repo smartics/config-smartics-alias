@@ -16,8 +16,8 @@
     limitations under the License.
 
 -->
-<project name="Checkstyle configuration for smartics projects">
-  <publishDate position="navigation-bottom" format="dd.MM.yyyy"/>
+<project name="${project.artifactId}">
+  <publishDate position="bottom" format="dd. MMMM yyyy"/>
 
   <bannerLeft>
     <name>${project.name}</name>
@@ -38,8 +38,9 @@
     </breadcrumbs>
 
     <menu name="Overview">
-      <item name="Home"    href="index.html"/>
-      <item name="Aliases" href="aliases.html"/>
+      <item name="Home"         href="index.html"/>
+      <item name="Alias Report" href="alias-report.html"/>
+      <item name="Aliases XML"  href="aliases.html"/>
     </menu>
 
     <menu name="Release Information">

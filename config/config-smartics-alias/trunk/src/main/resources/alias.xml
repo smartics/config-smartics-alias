@@ -17,8 +17,20 @@
 
 -->
 <aliases
-  xmlns="http://smartics.de/alias/1.0.0"
+  xmlns="http://smartics.de/alias/1.1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <extension env="windows">
+    <name>aq</name>
+    <template>@echo off {@cmd} @echo on</template>
+    <comment>and-quit: Launches the command and closes the shell on successful termination. On error the shell is turned red and beeps for attention.</comment>
+    <apply-to>
+      <group>mvn</group>
+      <group>project-release</group>
+      <alias>r</alias>
+    </apply-to>
+  </extension>
+
   <group name="mvn">
     <comment>
       Aliases running builds with <a href="http://maven.apache.org">Maven</a>.
