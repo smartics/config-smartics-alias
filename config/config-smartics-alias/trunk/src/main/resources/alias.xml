@@ -36,6 +36,16 @@
       Aliases running builds with <a href="http://maven.apache.org">Maven</a>.
     </comment>
     <alias>
+      <name>t</name>
+      <command>mvn -T 4 clean test</command>
+      <comment>Tests a project with <a href="http://maven.apache.org">Maven</a>. Requires a valid Maven-POM.</comment>
+    </alias>
+    <alias>
+      <name>p</name>
+      <command>mvn -T 4 clean package</command>
+      <comment>Packages a project with <a href="http://maven.apache.org">Maven</a>. Requires a valid Maven-POM.</comment>
+    </alias>
+    <alias>
       <name>i</name>
       <command>mvn -T 4 clean install</command>
       <comment>Installs a project with <a href="http://maven.apache.org">Maven</a>. Requires a valid Maven-POM.</comment>
