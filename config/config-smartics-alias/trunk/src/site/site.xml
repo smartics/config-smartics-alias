@@ -17,8 +17,6 @@
 
 -->
 <project name="${project.artifactId}">
-  <publishDate position="bottom" format="dd. MMMM yyyy"/>
-
   <bannerLeft>
     <name>${project.name}</name>
     <src>images/logos/logo.png</src>
@@ -41,6 +39,8 @@
       <item name="Home"         href="index.html"/>
       <item name="Alias Report" href="alias-report.html"/>
       <item name="Aliases XML"  href="aliases.html"/>
+      <item name="Accessing Artifacts" href="http://www.smartics.de/projects/accessing-artifacts"/>
+      <item name="All Versions"        href="${webroot}/${project.groupId}/${project.artifactId}/"/>
     </menu>
 
     <menu name="Release Information">
