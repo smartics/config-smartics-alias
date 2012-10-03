@@ -50,7 +50,7 @@
   </distributionManagement>
 
   <properties>
-    <alias-maven-plugin.version>0.2.0-SNAPSHOT</alias-maven-plugin.version>
+    <alias-maven-plugin.version>0.3.0</alias-maven-plugin.version>
   </properties>
 
   <build>

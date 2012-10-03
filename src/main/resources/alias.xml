@@ -23,7 +23,7 @@
   <extension env="windows">
     <name>aq</name>
     <template>@echo off $T color $T {@cmd} ^&amp;^&amp; exit $T color F4 $T @echo on $T echo ${bell}</template>
-    <comment>and-quit: Launches the command and closes the shell on successful termination.
+    <comment mnemonic="... and quit!">Launches the command and closes the shell on successful termination.
       On error the shell is turned red and beeps for attention.</comment>
     <apply-to>
       <group>mvn</group>
@@ -34,7 +34,7 @@
   <extension env="bash">
     <name>aq</name>
     <template>{@cmd} ; exit</template>
-    <comment>and-quit: Launches the command and closes the shell on successful termination.
+    <comment mnemonic="... and quit!">Launches the command and closes the shell on successful termination.
       On error the shell is turned red and beeps for attention.</comment>
     <apply-to>
       <group>mvn</group>
@@ -156,7 +156,7 @@
       </comment>
     </alias>
     <alias>
-      <name>pu</name>
+      <name>dpu</name>
       <command>mvn versions:display-plugin-updates</command>
       <comment>
         Displays all plugins that have newer versions available.
@@ -167,7 +167,7 @@
       </comment>
     </alias>
     <alias>
-      <name>du</name>
+      <name>ddu</name>
       <command>mvn versions:display-dependency-updates</command>
       <comment>
         Displays all dependencies that have newer versions available.
