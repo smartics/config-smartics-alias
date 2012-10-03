@@ -9,7 +9,7 @@
   <parent>
     <groupId>de.smartics.config.pom</groupId>
     <artifactId>pom-root</artifactId>
-    <version>29.3.2</version>
+    <version>29.3.5</version>
   </parent>
 
   <groupId>de.smartics.config</groupId>
