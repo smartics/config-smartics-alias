@@ -30,9 +30,14 @@
   </bannerRight>
 
   <body>
+    <head>
+      <link rel="SHORTCUT ICON" href="${project.url}/images/logos/favicon.ico"/>
+    </head>
+
     <breadcrumbs>
-      <item name="projects" href="${webroot-projects}"/>
-      <item name="home" href="${project.url}"/>
+      <item name="smartics" href="http://www.smartics.de/"/>
+      <item name="projects" href="${webroot-projects}/index.html"/>
+      <item name="${project.artifactId}" href="${project.url}/index.html"/>
     </breadcrumbs>
 
     <menu name="Overview">
