@@ -22,7 +22,7 @@
 
   <extension env="windows">
     <name>aq</name>
-    <template>@echo off $T color $T {@cmd} ^&amp;^&amp; exit $T color F4 $T @echo on $T echo ${bell}</template>
+    <template>@echo off $T color $T {@cmd} ^&amp;^&amp; exit $T color F4 $T @echo on $T echo {@bell}</template>
     <comment mnemonic="... and quit!">Launches the command and closes the shell on successful termination.
       On error the shell is turned red and beeps for attention.</comment>
     <apply-to>
@@ -33,9 +33,11 @@
 
   <extension env="bash">
     <name>aq</name>
-    <template>{@cmd} ; exit</template>
-    <comment mnemonic="... and quit!">Launches the command and closes the shell on successful termination.
-      On error the shell is turned red and beeps for attention.</comment>
+    <template>{@cmd} &amp;&amp; exit ; echo {@bell}</template>
+    <comment mnemonic="... and quit!">
+      Launches the command and closes the shell on successful termination.
+      On error the shell beeps for attention.
+    </comment>
     <apply-to>
       <group>mvn</group>
       <group>project-release</group>

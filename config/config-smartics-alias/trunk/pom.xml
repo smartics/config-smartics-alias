@@ -47,7 +47,7 @@
   </distributionManagement>
 
   <properties>
-    <alias-maven-plugin.version>0.3.0</alias-maven-plugin.version>
+    <alias-maven-plugin.version>0.3.1</alias-maven-plugin.version>
   </properties>
 
   <build>
