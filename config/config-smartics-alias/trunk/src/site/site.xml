@@ -35,15 +35,15 @@
     </head>
 
     <breadcrumbs>
-      <item name="smartics" href="http://www.smartics.de/"/>
-      <item name="projects" href="${webroot-projects}/index.html"/>
+      <item name="home" href="http://www.smartics.de/"/>
+      <item name="projects" href="${webroot-projects}"/>
       <item name="${project.artifactId}" href="${project.url}/index.html"/>
     </breadcrumbs>
 
     <menu name="Overview">
-      <item name="Home"         href="index.html"/>
-      <item name="Alias Report" href="alias-report.html"/>
-      <item name="Aliases XML"  href="aliases.html"/>
+      <item name="Introduction"        href="index.html"/>
+      <item name="Alias Report"        href="alias-report.html"/>
+      <item name="Aliases XML"         href="aliases.html"/>
       <item name="Accessing Artifacts" href="http://www.smartics.de/projects/accessing-artifacts"/>
       <item name="All Versions"        href="${webroot}/${project.groupId}/${project.artifactId}/"/>
     </menu>
