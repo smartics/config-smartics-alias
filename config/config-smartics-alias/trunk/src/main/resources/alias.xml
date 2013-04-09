@@ -249,13 +249,13 @@
     </comment>
     <alias env="windows">
       <name>j6</name>
-      <command passArgs="false">set JAVA_HOME=%JAVA_HOME_6%</command>
-      <comment>Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_6</tt>.</comment>
+      <command passArgs="false">set JAVA_HOME="%JAVA_HOME_6%" ^&amp;^&amp; set PATH=%JAVA_HOME_6%\bin;%PATH%</command>
+      <comment>Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_6</tt> and prepends it to the <tt>PATH</tt>.</comment>
     </alias>
     <alias env="windows">
       <name>j7</name>
-      <command passArgs="false">set JAVA_HOME=%JAVA_HOME_7%</command>
-      <comment>Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_7</tt>.</comment>
+      <command passArgs="false">set JAVA_HOME="%JAVA_HOME_7%" ^&amp;^&amp; set PATH=%JAVA_HOME_7%\bin;%PATH%</command>
+      <comment>Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_7</tt> and prepends it to the <tt>PATH</tt>.</comment>
     </alias>
   </group>
 </aliases>
