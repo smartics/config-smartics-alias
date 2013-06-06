@@ -84,6 +84,12 @@
         <a href="http://code.google.com/p/maven-license-plugin/">maven-license-plugin</a>.
       </comment>
     </alias>
+  </group>
+
+  <group name="jboss">
+    <comment>
+      Aliases to deploy project artifacts to a JBoss application server.
+    </comment>
     <alias>
       <name>asd</name>
       <command>mvn jboss-as:deploy</command>
@@ -105,7 +111,7 @@
         Aplication Server Undeploy (asu): undeploy via management api.
       </comment>
     </alias>
-    
+
      <alias>
       <name>iasd</name>
       <command>mvn clean install jboss-as:deploy</command>
