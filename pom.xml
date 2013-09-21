@@ -6,7 +6,7 @@
   <parent>
     <groupId>de.smartics.config.pom</groupId>
     <artifactId>pom-root</artifactId>
-    <version>29.3.10</version>
+    <version>30.1.2</version>
   </parent>
 
   <groupId>de.smartics.config</groupId>
