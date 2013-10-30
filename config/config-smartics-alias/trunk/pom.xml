@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -11,7 +14,7 @@
 
   <groupId>de.smartics.config</groupId>
   <artifactId>config-smartics-alias</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>config-smartics-alias</name>
@@ -122,7 +125,10 @@
             </goals>
             <configuration>
               <target>
-                <xslt in="${basedir}/src/main/resources/alias.xml" out="${project.build.directory}/generated-site/xdoc/aliases.xml" style="${basedir}/src/etc/create-doc.xsl" />
+                <xslt
+                  in="${basedir}/src/main/resources/alias.xml"
+                  out="${project.build.directory}/generated-site/xdoc/aliases.xml"
+                  style="${basedir}/src/etc/create-doc.xsl" />
               </target>
             </configuration>
           </execution>
