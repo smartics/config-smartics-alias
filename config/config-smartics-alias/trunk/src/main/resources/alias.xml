@@ -64,6 +64,11 @@
       <comment>Installs a project with <a href="http://maven.apache.org">Maven</a>. Requires a valid Maven-POM.</comment>
     </alias>
     <alias>
+      <name>d</name>
+      <command>mvn -T 4 clean deploy</command>
+      <comment>Deploys a project with <a href="http://maven.apache.org">Maven</a>. Requires a valid Maven-POM.</comment>
+    </alias>
+    <alias>
       <name>s</name>
       <command>mvn -T 4 initialize site</command>
       <comment>Creates <a href="http://maven.apache.org">Maven</a> site. Requires a valid Maven-POM.</comment>
