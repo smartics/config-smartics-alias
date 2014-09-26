@@ -290,6 +290,26 @@
     </alias>
   </group>
 
+  <group name="atlassian">
+    <comment>
+      Aliases to work with Atlassian's SDK.
+    </comment>
+    <alias>
+      <name>atlas-d</name>
+      <command>atlas-debug -Dmaven.test.skip</command>
+      <comment>
+        Skips the tests whose existence prevent FastDev from hot-deployment.
+      </comment>
+    </alias>
+    <alias>
+      <name>atlas-rs</name>
+      <command>atlas-run-standalone --product confluence</command>
+      <comment>
+        Starts the standalone version of confluence for developing purposes.
+      </comment>
+    </alias>
+  </group>
+
   <group name="java">
     <comment>
       Aliases setting environment variables for the Java runtime.
