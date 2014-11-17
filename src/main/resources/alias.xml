@@ -292,7 +292,7 @@
 
   <group name="atlassian">
     <comment>
-      Aliases to work with Atlassian's SDK.
+      Aliases to work with <a href="https://developer.atlassian.com/display/DOCS/Getting+Started">Atlassian's SDK</a>.
     </comment>
     <alias>
       <name>atlas-d</name>
@@ -310,15 +310,19 @@
     </alias>
   </group>
 
-  <group name="Enterprise Architect">
+  <group name="enterprise-architect">
     <comment>
-      Aliases to work with Sparx Systems' Enterprise Architect.
+      Aliases to work with Sparx Systems' <a href="http://www.sparxsystems.com/products/ea/">Enterprise Architect</a>.
     </comment>
     <alias>
       <name>ea</name>
-      <command>set JAVA_HOME="%JAVA_HOME_6x32%"^&amp;^&amp; set PATH=%JAVA_HOME_6x32%\bin;%PATH% ^&amp;^&amp; set MAVEN_OPTS=%MAVEN_OPTS% -Djava.library.path="C:\Program Files (x86)\Sparx Systems\EA Trial\Java API"</command>
+      <command>set JAVA_HOME="%JAVA_HOME_6x32%"^&amp;^&amp; set PATH=%JAVA_HOME_6x32%\bin;%PATH% ^&amp;^&amp; set MAVEN_OPTS=%MAVEN_OPTS% -Djava.library.path="%EA_LIB_PATH%"</command>
       <comment>
-        Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_6x32</tt> and prepends it to the <tt>PATH</tt>. Additionally the library path now includes the EADLL.
+        Sets environment variable <tt>JAVA_HOME</tt> to existing <tt>JAVA_HOME_6x32</tt> and prepends it to the <tt>PATH</tt>.
+        Additionally the library path now includes the EA DLL by referencing the existing environment variable <tt>EA_LIB_PATH</tt>.
+        <p>
+        <strong>To use this alias, please define the environment variables <tt>JAVA_HOME_6x32</tt> and <tt>EA_LIB_PATH</tt>.</strong>
+        </p>
       </comment>
     </alias>
   </group>
