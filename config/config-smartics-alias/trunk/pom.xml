@@ -11,7 +11,7 @@
 
   <groupId>de.smartics.config</groupId>
   <artifactId>config-smartics-alias</artifactId>
-  <version>1.2.0-SNAPSHOT</version>
+  <version>1.2.0</version>
   <packaging>jar</packaging>
 
   <name>config-smartics-alias</name>
@@ -33,9 +33,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</connection>
-    <developerConnection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</developerConnection>
-    <url>https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</url>
+    <connection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/tags/config-smartics-alias-1.2.0</connection>
+    <developerConnection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/tags/config-smartics-alias-1.2.0</developerConnection>
+    <url>https://www.smartics.eu/svn/public/config/${project.artifactId}/tags/config-smartics-alias-1.2.0</url>
   </scm>
 
   <distributionManagement>
