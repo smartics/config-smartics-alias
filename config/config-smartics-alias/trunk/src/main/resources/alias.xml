@@ -305,7 +305,7 @@
       <name>atlas-rs</name>
       <command>atlas-run-standalone --product confluence --jvmargs "-Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n"</command>
       <comment>
-        Starts the standalone version of confluence for developing purposes.
+        Starts the standalone version of confluence for developing purposes. To run a version that is not the LATEST, use: --version 5.4.1 --data-version 5.4.1
       </comment>
     </alias>
   </group>
