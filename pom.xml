@@ -51,9 +51,10 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</connection>
-    <developerConnection>scm:svn:https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</developerConnection>
-    <url>https://www.smartics.eu/svn/public/config/${project.artifactId}/trunk</url>
+    <connection>scm:git:git@github.com:smartics/${project.artifactId}</connection>
+    <developerConnection>scm:git:git@github.com:smartics/${project.artifactId}</developerConnection>
+    <url>https://github.com/smartics/${project.artifactId}</url>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
