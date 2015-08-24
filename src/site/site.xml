@@ -16,10 +16,38 @@
     limitations under the License.
 
 -->
-<project name="${project.artifactId}">
+<project name="${project.name}">
+  <publishDate position="bottom" format="dd. MMMM yyyy"/>
+  <version position="right"/>
+
+  <skin>
+    <groupId>de.smartics.maven.skins</groupId>
+    <artifactId>maven-fluido-smartics-skin</artifactId>
+    <version>${maven-fluido-smartics-skin_version}</version>
+  </skin>
+  <custom>
+    <fluidoSkin>
+      <topBarEnabled>true</topBarEnabled>
+      <sideBarEnabled>true</sideBarEnabled>
+      <navBarStyle>navbar-inverse</navBarStyle>
+    </fluidoSkin>
+  </custom>
+
+  <!--
+    The icon for the project is designed by
+              Mattahan (Paul Davey, http://mattahan.deviantart.com)
+    as part of the icon set
+              Buuf (http://findicons.com/pack/50/buuf)
+    and used under
+        Creative Commons Attribution Non-commercial Share Alike (by-nc-sa)
+               (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+    Origin: http://findicons.com/icon/4009/be_quiet
+   -->
   <bannerLeft>
     <name>${project.name}</name>
     <src>images/logos/logo.png</src>
+    <href>${project.url}</href>
     <alt>${project.name}</alt>
   </bannerLeft>
   <bannerRight>
@@ -49,27 +77,20 @@
       <item name="All Versions"        href="${webroot}/${project.groupId}/${project.artifactId}/"/>
     </menu>
 
-    <menu name="Release Information">
-      <item name="New and Noteworthy" href="new-and-noteworthy.html"/>
-      <item name="Release Notes"      href="release-notes-report.html"/>
-      <item name="Breaking News"      href="breaking-news.html"/>
-      <item name="Release Plan"       href="release-plan-report.html"/>
-    </menu>
-
     <menu name="Project Documentation">
       <item name="Project Information" href="project-info.html" collapse="true">
-        <item name="Summary" href="project-summary.html"/>
-        <item name="Team"    href="team-list.html"/>
-        <item name="License" href="license.html"/>
+        <item name="Summary"       href="project-summary.html"/>
+        <item name="Build Report"  href="build-report.html"/>
+        <item name="Team"          href="team-list.html"/>
+        <item name="License"       href="license.html"/>
       </item>
       <item name="Project Dependencies" href="project-info.html" collapse="true">
-        <item name="Dependencies" href="dependencies.html"/>
-        <item name="Plugins" href="plugin-management.html"/>
+        <item name="Dependencies"       href="dependencies.html"/>
+        <item name="Plugins"            href="plugin-management.html"/>
       </item>
       <item name="Information Systems" href="project-info.html" collapse="true">
         <item name="Source Repository" href="source-repository.html"/>
         <item name="Issue Management"  href="issue-tracking.html"/>
-        <item name="CI Server"         href="integration.html"/>
       </item>
     </menu>
   </body>
