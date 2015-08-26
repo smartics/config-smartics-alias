@@ -109,6 +109,7 @@
     <info.server.issues>https://www.smartics.eu/jira/projects</info.server.issues>
     <info.server.repo>https://www.smartics.eu/nexus</info.server.repo>
     <info.server.scm>https://www.smartics.eu/svn/public</info.server.scm>
+    <info.server.site>https://www.smartics.eu</info.server.site>
 
     <info.server.repo.prefix>${info.server.repo}/content</info.server.repo.prefix>
     <info.server.repo.group>${info.server.repo.prefix}/groups/public-group</info.server.repo.group>
@@ -116,7 +117,11 @@
     <build.server.site.upload>scp://www.smartics.eu/home/smartics/public_html/${info.project.visibility}</build.server.site.upload>
     <build.server.repo.upload>dav:${info.server.repo.prefix}/repositories</build.server.repo.upload>
 
-    <maven-fluido-smartics-skin_version>2.0.4</maven-fluido-smartics-skin_version>
+    <webroot>${info.server.site}</webroot>
+    <weburl>${info.server.site}/${project.groupId}/${project.artifactId}/${project.version}</weburl>
+    <webroot-projects>http://www.smartics.de/projects</webroot-projects>
+
+    <maven-fluido-smartics-skin_version>2.1.0</maven-fluido-smartics-skin_version>
 
     <version.buildmetadata-maven-plugin>1.5.0.RC1</version.buildmetadata-maven-plugin>
     <version.maven-antrun-plugin>1.7</version.maven-antrun-plugin>
@@ -186,14 +191,6 @@
                 <Java-Vendor>${java.vendor}</Java-Vendor>
               </manifestEntries>
             </archive>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>${version.maven-javadoc-plugin}</version>
-          <configuration>
-            <skip>true</skip>
           </configuration>
         </plugin>
 
@@ -351,6 +348,45 @@
       </plugin>
 
       <plugin>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <version>${version.maven-license-plugin}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <strictCheck>true</strictCheck>
+          <header>src/etc/license/header.txt</header>
+          <headerDefinitions>
+            <headerDefinition>src/etc/license/javadoc.xml</headerDefinition>
+          </headerDefinitions>
+          <properties>
+            <year>${build.copyright.year}</year>
+          </properties>
+          <excludes>
+            <exclude>.settings/**</exclude>
+            <exclude>.*</exclude>
+            <exclude>COPYRIGHT.txt</exclude>
+            <exclude>LICENSE-*</exclude>
+            <exclude>src/etc/license/javadoc.xml</exclude>
+            <exclude>src/etc/license/header.txt</exclude>
+            <exclude>**/*.md</exclude>
+          </excludes>
+          <mapping>
+            <!--  Unfortunately we use xml.vm extensions to filter xdoc pages.
+                  The tag xml.vm is not recognized, so we simply override the
+                  vm tag. -->
+            <vm>XML_STYLE</vm>
+            <jnlp>XML_STYLE</jnlp>
+          </mapping>
+        </configuration>
+      </plugin>
+
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>${version.maven-site-plugin}</version>
@@ -402,7 +438,7 @@
       <plugin>
         <groupId>de.smartics.maven.plugin</groupId>
         <artifactId>alias-maven-plugin</artifactId>
-        <version>${alias-maven-plugin.version}</version>
+        <version>${version.alias-maven-plugin}</version>
       </plugin>
     </plugins>
   </reporting>

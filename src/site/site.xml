@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 
-    Copyright 2012-2014 smartics, Kronseder & Reiner GmbH
+    Copyright 2012-2015 smartics, Kronseder & Reiner GmbH
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@
       <item name="Introduction"        href="index.html"/>
       <item name="Alias Report"        href="alias-report.html"/>
       <item name="Aliases XML"         href="aliases.html"/>
-      <item name="Project Blog"        href="${webroot-projects}/productivity-a-ware/alias-maven-plugin"/>
+      <!-- <item name="Project Blog"        href="${webroot-projects}/productivity-a-ware/alias-maven-plugin"/> -->
       <item name="Accessing Artifacts" href="http://www.smartics.de/projects/accessing-artifacts"/>
       <item name="All Versions"        href="${webroot}/${project.groupId}/${project.artifactId}/"/>
     </menu>
