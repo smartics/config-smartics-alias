@@ -5,7 +5,7 @@
 
   <groupId>de.smartics.config</groupId>
   <artifactId>config-smartics-alias</artifactId>
-  <version>1.2.1</version>
+  <version>1.2.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>smartics Alias Config</name>
@@ -51,7 +51,7 @@
     <connection>scm:git:git@github.com:smartics/${project.artifactId}</connection>
     <developerConnection>scm:git:git@github.com:smartics/${project.artifactId}</developerConnection>
     <url>https://github.com/smartics/${project.artifactId}</url>
-    <tag>config-smartics-alias-1.2.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
