@@ -123,9 +123,9 @@
 
     <maven-fluido-smartics-skin_version>2.1.0</maven-fluido-smartics-skin_version>
 
-    <version.buildmetadata-maven-plugin>1.5.0.RC1</version.buildmetadata-maven-plugin>
+    <version.buildmetadata-maven-plugin>1.6.0</version.buildmetadata-maven-plugin>
     <version.maven-antrun-plugin>1.7</version.maven-antrun-plugin>
-    <version.alias-maven-plugin>0.3.3</version.alias-maven-plugin>
+    <version.alias-maven-plugin>0.3.4</version.alias-maven-plugin>
 
     <version.maven-deploy-plugin>2.8.2</version.maven-deploy-plugin>
     <version.maven-install-plugin>2.5.2</version.maven-install-plugin>
